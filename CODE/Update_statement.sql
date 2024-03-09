@@ -7,7 +7,7 @@ SET column_1 = value_1 , column_2 = value_2.....
 WHERE conditions;
 */
 
-USE enployees;
+USE employees;
 
 UPDATE employees
 SET

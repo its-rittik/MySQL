@@ -98,7 +98,7 @@ FROM
 GROUP BY first_name
 ORDER BY first_name DESC;
 
-### HAVING
+## HAVING
 /*
 	SELECT column_name(s)
     FROM table_name
@@ -108,7 +108,7 @@ ORDER BY first_name DESC;
     ORDER BY column_name(s)
     LIMIT n; # Print n rows in the display and always have to write at the end 
     
-    1.HAVING is like WHERE but aoolied to the GROUP BY block
+    1.HAVING is like WHERE but applied to the GROUP BY block
     2.after HAVING , you can have a condition with an AGGREGATE Function, 
     while WHERE can't use aggregate function within its conditions.
     3. Aggregate and Non- aggregate function both can't apply in HAVING at the same time
@@ -129,7 +129,7 @@ FROM
 GROUP BY first_name
 HAVING COUNT(first_name) > 250
 ORDER BY first_name
-LIMIT 100;
+LIMIT 1000;
 
 
 SELECT 

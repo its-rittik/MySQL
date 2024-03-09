@@ -12,7 +12,7 @@ USE employees;
 			FROM
 				table_1 
 			JOIN
-				table_2  ON table_1.colimn_name = table_2.column_name;
+				table_2  ON table_1.column_name = table_2.column_name;
             
             ----------------------------------------------------------
             

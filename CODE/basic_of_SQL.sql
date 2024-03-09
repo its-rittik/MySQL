@@ -25,7 +25,7 @@ CREATE TABLE Customers
     number_of_complaints INT NOT NULL
 );
 
-drop table sales.customers; # deleting cuatomer table
+DROP TABLE sales.customers; # deleting cuatomer table
 
 
 CREATE TABLE CUSTOMERS 
@@ -55,7 +55,7 @@ PRIMARY KEY (company_id)
 
 # FOREIGN KEY
 # alter use for making changes in the table . 
-ALTER TABLE sales -- make a realtion between FK and PK
+ALTER TABLE sales # make a realtion between FK and PK
 	ADD FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE,
 	ADD FOREIGN KEY (item_code) REFERENCES items(item_code) ON DELETE CASCADE;
 
@@ -77,7 +77,7 @@ ALTER TABLE customers # changeing column name and setting a default value
 
 ALTER TABLE companies
 	ADD UNIQUE KEY (headquarters_phone_number) ,
-	CHANGE COLUMN company_name company_name VARCHAR(255) DEFAULT 'X';
+	CHANGE COLUMN company_name company_name VARCHAR(255) DEFAULT 'X';   
 
 
 # NOT NULL
@@ -90,8 +90,8 @@ ALTER TABLE companies # Method 2
 
 
 
-INSERT INTO customers (customer_id , customer_name , mail , phone_number) # insert info into customer table into the mentioned columns . if you want to insert value to the all column then dont have mention any column
-	VALUES(16,'Sobuj','sobuj@gmail.com',01789898989);
+INSERT INTO customers # insert info into customer table into the mentioned columns . if you want to insert value to the all column then dont have mention any column
+	VALUES(16,'Sobuj','sobuj@gmail.com',01789898989 ,2);
 
 SELECT * FROM sales.customers; # print the customers table
 
